@@ -85,6 +85,8 @@ extension HabitDetailsViewController: UITableViewDataSource {
             let isChecked = HabitsStore.shared.habit(item, isTrackedIn: date)
             if isChecked {
                 cell.accessoryType = .checkmark
+            } else {
+                cell.accessoryType = .none
             }
         }
         
