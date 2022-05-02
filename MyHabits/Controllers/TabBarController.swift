@@ -21,17 +21,17 @@ class TabBarController: UITabBarController {
         viewControllers = [
             createNavController(for: HabitsViewController(),
                                    title: "Привычки",
-                                   image: UIImage(systemName: "rectangle.grid.1x2.fill")!),
+                                   image: UIImage(systemName: "rectangle.grid.1x2.fill")),
             
             createNavController(for: InfoViewController(),
                                    title: "Информация",
-                                   image: UIImage(systemName: "info.circle.fill")!)
+                                   image: UIImage(systemName: "info.circle.fill"))
         ]
     }
     
     func createNavController(for rootViewController: UIViewController,
                              title: String,
-                             image: UIImage) -> UIViewController {
+                             image: UIImage?) -> UIViewController {
         let navController = UINavigationController(rootViewController: rootViewController)
         navController.tabBarItem.title = title
         navController.tabBarItem.image = image

@@ -126,6 +126,7 @@ class HabitCollectionViewCell: UICollectionViewCell {
             customView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: offset),
 
             habitTitle.topAnchor.constraint(equalTo: customView.topAnchor, constant: inset),
+            habitTitle.trailingAnchor.constraint(equalTo: customView.trailingAnchor, constant: -64),
             habitTitle.leadingAnchor.constraint(equalTo: customView.leadingAnchor, constant: inset),
             
             habitTime.topAnchor.constraint(equalTo: habitTitle.bottomAnchor, constant: 5),
